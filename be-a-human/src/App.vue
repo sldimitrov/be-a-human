@@ -5,7 +5,9 @@ import 'primeicons/primeicons.css'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo-badi-chovек.jpg" />
+    <RouterLink class="link" to="/">
+      <img alt="Vue logo" class="logo" src="@/assets/logo-badi-chovек.jpg"  />
+    </RouterLink>
 
     <div class="wrapper">
       <nav>
