@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
+import AnimateOnScroll from 'primevue/animateonscroll';
 
 
 import App from './App.vue'
@@ -18,5 +19,7 @@ app.use(PrimeVue, {
     preset: Aura
   }
 });
+
+app.directive('animateonscroll', AnimateOnScroll);
 
 app.mount('#app')
