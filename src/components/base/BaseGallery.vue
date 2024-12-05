@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import Galleria from 'primevue/galleria';
 
-import 'primeicons/primeicons.css'
-
 const images = [
   {
     itemImageSrc: "https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/413819552_672391888421164_7246973310754745577_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1J2FqvLWKVgQ7kNvgHa4S8D&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=AjDrWpd3QGy45qM4u9XpoOg&oh=00_AYD2MdDND6jQRl8egVhSDEfQpiAcjgD8t7oOrPHniD655w&oe=6757820C",
