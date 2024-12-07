@@ -104,13 +104,13 @@ const responsiveOptions = [
 }
 
 .severity {
-  color: gold;
+  color: #f4b03e;
 }
 
 hr {
   border: none; /* Remove default border */
   height: 2px; /* Set the height of the hr element */
-  background-color: gold; /* Set the desired color */
+  background-color: #f4b03e; /* Set the desired color */
   margin-bottom: 20px;
 }
 

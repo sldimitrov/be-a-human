@@ -2,23 +2,26 @@
 import Card from "primevue/card";
 
 const props = defineProps<{
-  img: string
+  icon: string
   title: string
   content: string
 }>()
 </script>
 
 <template>
-  <Card style="width: 25rem;">
+  <Card class="card-body" style="width: 25rem;">
     <template #header>
       <div class="card-header">
-        <img alt="user header" :src="props.img" class="header-image" />
+        <i :class="props.icon" style="font-size: 6rem"></i>
       </div>
     </template>
-    <template #title>{{props.title}}</template>
-    <template #subtitle></template>
-    <template #content>
-      <p class="m-0">
+    <template class="card-title" #title>
+      <p class="card-title">
+        {{props.title}}
+      </p>
+    </template>
+    <template class="card-content" #content>
+      <p class="card-content">
         {{props.content}}
       </p>
     </template>
@@ -32,7 +35,44 @@ const props = defineProps<{
   justify-content: center;
 }
 
-p {
-  color: white
+.card-body {
+  background: #FEF7EC;
+  border: 2px solid #f4b03e;
 }
+
+.card-header {
+  display: flex;
+  justify-content: start;
+  padding-left: 20px;
+  color: #f4b03e;
+}
+
+.card-content {
+  color: black;
+  font-size: 19px;
+}
+
+.card-body:hover {
+  background: #f4b03e;
+}
+
+.card-body:hover .card-title {
+  color: white;
+}
+
+.card-body:hover .card-content {
+  color: white;
+}
+
+.card-body:hover .card-header {
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+  color: #f4b03e;
+}
+
 </style>

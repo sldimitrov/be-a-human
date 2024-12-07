@@ -96,7 +96,8 @@ const responsiveOptions = [
 }
 
 .poster-text {
-  color: gold;
+  color: #f4b03e;
+  text-transform: uppercase;
   position: absolute;
   display: flex;
   align-items: flex-start;
