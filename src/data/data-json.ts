@@ -1,4 +1,4 @@
-import baseImg from '@/assets/logo-badi-chovек.jpg'
+import baseImg from '../../public/favicon.ico'
 
 export const cardsData = [
   {

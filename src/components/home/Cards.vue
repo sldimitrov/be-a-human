@@ -24,11 +24,11 @@ import {cardsData} from "@/data/data-json";
 <style scoped>
 section {
   background: #FEF7EC;
-  height: 900px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .card-body {
@@ -85,7 +85,7 @@ h3 {
 
 @media (max-width: 1200px) {
   section {
-    height: 2100px;
+    height: 1700px;
     margin-top: 15rem;
     flex-direction: column;
     align-items: center;
@@ -94,6 +94,7 @@ h3 {
 
   .cards {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -105,13 +106,19 @@ h3 {
 
 @media (max-width: 900px) {
   section {
-    margin-top: 30rem;
+    margin-top: 25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    margin-top: 35rem;
   }
 }
 
 @media (max-width: 600px) {
   section {
-    margin-top: 33rem;
+    margin-top: 40rem;
   }
 }
 </style>
