@@ -14,8 +14,11 @@
   },
   "dependencies": {
     "@primevue/themes": "^4.2.4",
-    "pinia": "^2.2.6",
+    "click-outside-vue3": "^4.0.1",
+    "pinia": "^2.3.0",
+    "primeicons": "^7.0.0",
     "primevue": "^4.2.4",
+    "v-click-outside": "^3.2.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
