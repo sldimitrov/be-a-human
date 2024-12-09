@@ -1,14 +1,8 @@
 <script setup lang="ts">
 import {RouterLink} from "vue-router";
-import volunteerPortrait from '@/assets/aside-portait.png'
-import {ref} from "vue";
+import {useSidebarStore} from "@/stores/store";
 
-const isMenuOpen = ref(false);
-
-function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
-  console.log(isMenuOpen.value);
-}
+const store = useSidebarStore()
 </script>
 
 <template>
@@ -27,23 +21,9 @@ function toggleMenu() {
         </nav>
       </div>
       <div class="menu">
-        <button @click="toggleMenu">Меню ☰</button>
+        <button @click="store.toggleSidebarVisible()">Меню ☰</button>
       </div>
     </header>
-    <aside>
-      <div class="aside-img">
-        <img :src="volunteerPortrait" class="portrait" alt="Volunteer portrait" />
-      </div>
-      <div class="aside-links">
-
-        <RouterLink class="home aside-link" to="/">Начало</RouterLink>
-        <RouterLink class="aside-link" to="/cause">Каузата</RouterLink>
-        <RouterLink class="aside-link" to="/events">Събития</RouterLink>
-        <RouterLink class="aside-link" to="/joinus">Включи се</RouterLink>
-        <RouterLink class="aside-link" to="/contacts">Контакти</RouterLink>
-      </div>
-
-    </aside>
   </div>
 </template>
 
@@ -57,66 +37,6 @@ header {
   width: 100%;
   height: 150px;
   background: #fff;
-}
-
-
-/* SIDEBAR CSS */
-aside {
-  display: flex;
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  justify-content: start;
-  align-items: start;
-  background: white;
-  z-index: 99;
-  right: 0;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-.aside-img {
-  display: flex;
-}
-
-.portrait {
-  width: 100%;
-  border-radius: 25px
-}
-
-.aside-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  padding: 20px;
-}
-
-.link, .aside-link {
-  color: black;
-  font-size: 22px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.aside-link {
-  margin-bottom: 40px;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.row {
-  width: 100%;
-  margin: 0;
-}
-
-.aside-link:hover {
-  color: #f4b03e;
-}
-
-.home {
-  color: #f4b03e;
 }
 
 nav {
@@ -133,6 +53,14 @@ nav {
   justify-content: end;
   align-items: center;
 }
+
+.link {
+  color: black;
+  font-size: 22px;
+  list-style: none;
+  text-decoration: none;
+}
+
 
 button {
   all: unset; /* Resets all styles to default */
