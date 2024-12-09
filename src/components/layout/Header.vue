@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {RouterLink} from "vue-router";
-import {useSidebarStore} from "@/stores/store";
+import { RouterLink } from 'vue-router'
+import { useSidebarStore } from '@/stores/store'
 
 const store = useSidebarStore()
 </script>
@@ -9,7 +9,7 @@ const store = useSidebarStore()
   <div class="app">
     <header>
       <RouterLink to="/">
-        <img alt="Vue logo" class="logo" src="../../../public/favicon.ico"  />
+        <img alt="Vue logo" class="logo" src="../../../public/favicon.ico" />
       </RouterLink>
       <div class="wrapper">
         <nav>
@@ -60,7 +60,6 @@ nav {
   list-style: none;
   text-decoration: none;
 }
-
 
 button {
   all: unset; /* Resets all styles to default */

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Card from "primevue/card";
+import Card from 'primevue/card'
 
 const props = defineProps<{
   icon: string
@@ -9,7 +9,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Card class="card-body" style="width: 25rem;">
+  <Card class="card-body" style="width: 25rem">
     <template #header>
       <div class="card-header">
         <i :class="props.icon" style="font-size: 6rem"></i>
@@ -17,15 +17,14 @@ const props = defineProps<{
     </template>
     <template class="card-title" #title>
       <p class="card-title">
-        {{props.title}}
+        {{ props.title }}
       </p>
     </template>
     <template class="card-content" #content>
       <p class="card-content">
-        {{props.content}}
+        {{ props.content }}
       </p>
     </template>
-
   </Card>
 </template>
 
@@ -36,7 +35,7 @@ const props = defineProps<{
 }
 
 .card-body {
-  background: #FEF7EC;
+  background: #fef7ec;
   border: 2px solid #f4b03e;
 }
 
@@ -74,5 +73,4 @@ const props = defineProps<{
   font-weight: bold;
   color: #f4b03e;
 }
-
 </style>

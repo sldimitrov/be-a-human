@@ -1,17 +1,24 @@
 <script setup lang="ts">
-import BaseCard from "@/components/base/BaseCard.vue";
-import {cardsData} from "@/data/data-json";
+import BaseCard from '@/components/base/BaseCard.vue'
+import { cardsData } from '@/data/data-json'
 </script>
 
 <template>
   <section>
     <header class="cards-header">
-      <h3><hr class="line"/>&nbsp;Изживей живота си с кауза</h3>
-      <h2>НАШАТА МИСИЯ Е ДА ПОМАГАМЕ!<span class="bold"> ЕТО НАКРАТКО СТЪПКИТЕ ЗА ВСЯКА ЕДНА НАША КАМПАНИЯ!</span></h2>
+      <h3>
+        <hr class="line" />
+        &nbsp;Изживей живота си с кауза
+      </h3>
+      <h2>
+        НАШАТА МИСИЯ Е ДА ПОМАГАМЕ!<span class="bold">
+          ЕТО НАКРАТКО СТЪПКИТЕ ЗА ВСЯКА ЕДНА НАША КАМПАНИЯ!</span
+        >
+      </h2>
     </header>
     <div class="cards">
       <BaseCard
-        v-for="(card) in cardsData"
+        v-for="card in cardsData"
         class="card-body"
         :title="card.title"
         :content="card.content"
@@ -23,7 +30,7 @@ import {cardsData} from "@/data/data-json";
 
 <style scoped>
 section {
-  background: #FEF7EC;
+  background: #fef7ec;
   height: 750px;
   display: flex;
   flex-direction: column;
@@ -53,7 +60,8 @@ section {
   width: 100%;
 }
 
-h2, h3 {
+h2,
+h3 {
   text-align: center;
   color: black;
   margin: 0;

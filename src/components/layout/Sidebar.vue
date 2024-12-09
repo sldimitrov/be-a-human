@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import volunteerPortrait from "@/assets/aside-portait.png";
-import {RouterLink} from "vue-router";
-import {useSidebarStore} from "@/stores/store";
+import volunteerPortrait from '@/assets/aside-portait.png'
+import { RouterLink } from 'vue-router'
+import { useSidebarStore } from '@/stores/store'
 
 const store = useSidebarStore()
 
@@ -13,24 +13,32 @@ function handleClickOutside() {
 </script>
 
 <template>
-  <aside
-    v-click-outside="handleClickOutside"
-    :class="`${store.isSidebarVisible ? 'visible' : ''}`"
-  >
+  <aside v-click-outside="handleClickOutside" :class="`${store.isSidebarVisible ? 'visible' : ''}`">
     <div class="aside-img">
       <img :src="volunteerPortrait" class="portrait" alt="Volunteer portrait" />
     </div>
     <div class="aside-text">
-
       <div class="aside-links">
-        <RouterLink @click="store.toggleSidebarVisible" class="home aside-link" to="/">Начало</RouterLink>
-        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/cause">Каузата</RouterLink>
-        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/events">Събития</RouterLink>
-        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/joinus">Включи се</RouterLink>
-        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/contacts">Контакти</RouterLink>
+        <RouterLink @click="store.toggleSidebarVisible" class="home aside-link" to="/"
+          >Начало</RouterLink
+        >
+        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/cause"
+          >Каузата</RouterLink
+        >
+        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/events"
+          >Събития</RouterLink
+        >
+        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/joinus"
+          >Включи се</RouterLink
+        >
+        <RouterLink @click="store.toggleSidebarVisible" class="aside-link" to="/contacts"
+          >Контакти</RouterLink
+        >
       </div>
       <div class="aside-exit">
-        <button @click="store.toggleSidebarVisible"><i class="pi pi-times" style="font-size: 1.5rem"/></button>
+        <button @click="store.toggleSidebarVisible">
+          <i class="pi pi-times" style="font-size: 1.5rem" />
+        </button>
       </div>
     </div>
   </aside>
@@ -99,7 +107,8 @@ aside {
   padding: 20px;
 }
 
-.link, .aside-link {
+.link,
+.aside-link {
   color: black;
   font-size: 22px;
   list-style: none;
