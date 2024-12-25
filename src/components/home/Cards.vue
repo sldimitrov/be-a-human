@@ -87,13 +87,13 @@ h3 {
   height: 4px;
   border: none;
   background-color: #f4b03e;
-  margin-bottom: 13px;
+  margin-top: 5px;
   margin-right: 15px;
 }
 
 @media (max-width: 1200px) {
   section {
-    height: 1700px;
+    height: 1850px;
     margin-top: 15rem;
     flex-direction: column;
     align-items: center;
