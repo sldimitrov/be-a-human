@@ -1,33 +1,24 @@
 <script setup lang="ts">
 import Galleria from 'primevue/galleria'
+import firstImg from '@/assets/gallery/1.jpg'
+import secondImg from '@/assets/gallery/2.jpg'
+import thirdImg from '@/assets/gallery/3.jpg'
+import forthImg from '@/assets/gallery/4.jpg'
 
 const images = [
   {
-    itemImageSrc:
-      'https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/413819552_672391888421164_7246973310754745577_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1J2FqvLWKVgQ7kNvgHa4S8D&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=AjDrWpd3QGy45qM4u9XpoOg&oh=00_AYD2MdDND6jQRl8egVhSDEfQpiAcjgD8t7oOrPHniD655w&oe=6757820C',
-    thumbnailImageSrc:
-      'https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/413819552_672391888421164_7246973310754745577_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1J2FqvLWKVgQ7kNvgHa4S8D&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=AjDrWpd3QGy45qM4u9XpoOg&oh=00_AYD2MdDND6jQRl8egVhSDEfQpiAcjgD8t7oOrPHniD655w&oe=6757820C',
+    itemImageSrc: firstImg,
+    thumbnailImageSrc: firstImg,
     alt: 'Image 1 description',
   },
   {
-    itemImageSrc:
-      'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/411798292_672394108420942_1533572544933799859_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=K_1k3jaTVCIQ7kNvgFc-iRk&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=AOYxdK4Yk6DKlt8wS4VV7QT&oh=00_AYDmF8T7yL5KhwTBQ0SEJKHOsoDM1oglkEB9CQvibv-Z-g&oe=6757A7F8',
-    thumbnailImageSrc:
-      'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/411798292_672394108420942_1533572544933799859_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=K_1k3jaTVCIQ7kNvgFc-iRk&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=AOYxdK4Yk6DKlt8wS4VV7QT&oh=00_AYDmF8T7yL5KhwTBQ0SEJKHOsoDM1oglkEB9CQvibv-Z-g&oe=6757A7F8',
+    itemImageSrc: secondImg,
+    thumbnailImageSrc: secondImg,
     alt: 'Image 2 description',
   },
   {
-    itemImageSrc:
-      'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/411929434_672392071754479_8287516059891585916_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XP8DXaYKQ94Q7kNvgHYSgUB&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=A8Iukfx_8rWoNrdub-Y6raa&oh=00_AYDla_FnT6NCYyVWX8UrwFkdwhEQ8iUSGxrOlUhATow8wg&oe=67578AC8',
-    thumbnailImageSrc:
-      'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/411929434_672392071754479_8287516059891585916_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XP8DXaYKQ94Q7kNvgHYSgUB&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=A8Iukfx_8rWoNrdub-Y6raa&oh=00_AYDla_FnT6NCYyVWX8UrwFkdwhEQ8iUSGxrOlUhATow8wg&oe=67578AC8',
-    alt: 'Image 3 description',
-  },
-  {
-    itemImageSrc:
-      'https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/413806638_672391831754503_5754763545814045168_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4wj9yykwAFQQ7kNvgEIlVll&_nc_zt=23&_nc_ht=scontent-otp1-1.xx&_nc_gid=ArHYfHhDG4PZGrV_cMTEEuB&oh=00_AYDc6zNrXKAdrg9fz2GQvmnvn5d2aK4qMptL5OOZGPetLQ&oe=6757CCAB',
-    thumbnailImageSrc:
-      'https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/413806638_672391831754503_5754763545814045168_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4wj9yykwAFQQ7kNvgEIlVll&_nc_zt=23&_nc_ht=scontent-otp1-1.xx&_nc_gid=ArHYfHhDG4PZGrV_cMTEEuB&oh=00_AYDc6zNrXKAdrg9fz2GQvmnvn5d2aK4qMptL5OOZGPetLQ&oe=6757CCAB',
+    itemImageSrc: thirdImg,
+    thumbnailImageSrc: thirdImg,
     alt: 'Image 3 description',
   },
 ]

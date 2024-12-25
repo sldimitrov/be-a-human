@@ -1,4 +1,3 @@
-import baseImg from '../../public/favicon.ico'
 
 export const cardsData = [
   {

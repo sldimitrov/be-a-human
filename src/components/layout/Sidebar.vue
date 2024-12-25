@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import volunteerPortrait from '@/assets/aside-portait.png'
+import sidePortrait from '@/assets/aside.jpg'
 import { RouterLink } from 'vue-router'
 import { useSidebarStore } from '@/stores/store'
 
@@ -15,7 +16,7 @@ function handleClickOutside() {
 <template>
   <aside v-click-outside="handleClickOutside" :class="`${store.isSidebarVisible ? 'visible' : ''}`">
     <div class="aside-img">
-      <img :src="volunteerPortrait" class="portrait" alt="Volunteer portrait" />
+      <img :src="sidePortrait" class="portrait" alt="Volunteer portrait" />
     </div>
     <div class="aside-text">
       <div class="aside-links">
