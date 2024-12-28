@@ -1,17 +1,21 @@
-<script setup></script>
+<script setup>
+import WorkCharts from "@/components/cause/WorkCharts.vue";
+import BaseHeader from "@/components/base/BaseHeader.vue";
+</script>
 
 <template>
-  <div>
-    <h1>Каузата</h1>
+  <div class="cause">
+    <BaseHeader title="Каузата" />
+    <WorkCharts/>
   </div>
 </template>
 
 <style scoped>
-div {
+.cause {
   display: flex;
-   justify-content: center;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100px;
 }
 
 h1 {
