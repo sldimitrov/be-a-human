@@ -1,38 +1,31 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-import { useSidebarStore } from '@/stores/store'
+import {useSidebarStore} from "@/stores/store";
 
 const store = useSidebarStore()
 </script>
 
 <template>
-  <div class="app">
-    <header>
-      <RouterLink to="/">
-        <img alt="Vue logo" class="logo" src="../../../public/favicon.ico" />
-      </RouterLink>
-      <div class="wrapper">
-        <nav>
-          <RouterLink class="link" to="/">Начало</RouterLink>
-          <RouterLink class="link" to="/cause">Каузата</RouterLink>
-          <RouterLink class="link" to="/events">Събития</RouterLink>
-          <RouterLink class="link" to="/joinus">Включи се</RouterLink>
-          <RouterLink class="link" to="/contacts">Контакти</RouterLink>
-        </nav>
-      </div>
-      <div class="menu">
-        <button @click="store.toggleSidebarVisible()">Меню ☰</button>
-      </div>
-    </header>
+  <div class="header">
+    <RouterLink to="/">
+      <img alt="Vue logo" class="logo" src="../../../../public/favicon.ico" />
+    </RouterLink>
+    <div class="wrapper">
+      <nav>
+        <RouterLink class="link" to="/">Начало</RouterLink>
+        <RouterLink class="link" to="/cause">Каузата</RouterLink>
+        <RouterLink class="link" to="/events">Събития</RouterLink>
+        <RouterLink class="link" to="/joinus">Включи се</RouterLink>
+        <RouterLink class="link" to="/contacts">Контакти</RouterLink>
+      </nav>
+    </div>
+    <div class="menu">
+      <button @click="store.toggleSidebarVisible()">Меню ☰</button>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.app {
-  display: flex;
-}
-
-header {
+.header {
   display: flex;
   width: 100%;
   height: 150px;
