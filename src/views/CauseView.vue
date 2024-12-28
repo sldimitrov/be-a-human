@@ -1,7 +1,20 @@
 <script setup></script>
 
 <template>
-  <h1>Cause</h1>
+  <div>
+    <h1>Каузата</h1>
+  </div>
 </template>
 
-<style></style>
+<style scoped>
+div {
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+</style>
